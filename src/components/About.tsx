@@ -35,20 +35,22 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                With over 13 years in software development, I've evolved from a passionate coder to a 
-                strategic technical leader. My journey spans full-stack development, system architecture, 
-                and team leadership across diverse industries.
+                My unique perspective comes from combining a Bachelor's in Information and Communication 
+                Technology from VIA University College in Horsens, Denmark, with a Master's in IT Product Design. 
+                This dual foundation gives me both deep technical expertise and a profound understanding of users, 
+                business context, and design thinking.
               </p>
               
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                I specialize in building scalable, maintainable solutions while fostering collaborative 
-                environments where developers thrive. My approach combines technical excellence with 
-                strong leadership principles.
+                With over 13 years in software development, I've evolved from a passionate coder to a 
+                strategic technical leader who bridges the gap between complex technical solutions and 
+                real user needs. I don't just build software—I craft experiences that solve meaningful problems.
               </p>
               
               <p className="text-lg text-muted-foreground leading-relaxed">
-                When I'm not coding or mentoring teams, I'm exploring emerging technologies and 
-                contributing to the developer community through open source projects and technical writing.
+                This rare combination of technical mastery and user-centered design thinking is my USP. 
+                I lead teams that build scalable, maintainable solutions while always keeping the end user 
+                and business objectives at the heart of every decision.
               </p>
             </div>
             
