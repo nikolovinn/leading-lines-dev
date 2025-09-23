@@ -3,48 +3,40 @@ import { Card } from '@/components/ui/card';
 const Experience = () => {
   const experiences = [
     {
-      period: "2020 - Present",
-      role: "Senior Development Team Lead",
-      company: "Tech Solutions Inc.",
-      description: "Leading a team of 12 developers across multiple product lines. Architected microservices platform serving 1M+ users. Implemented DevOps practices reducing deployment time by 80%.",
+      period: "2019 - 2025",
+      role: "Head of Software Engineering",
+      company: "Die Werkbank IT GmbH",
+      description: "Drove end-to-end development of innovative AEC software products (BIM&More, v.create) from ideation to market release. Bridged business stakeholders and development teams, designing scalable architecture for integration-heavy solutions.",
       achievements: [
-        "Reduced system downtime by 95%",
-        "Improved team velocity by 40%",
-        "Mentored 8 junior developers"
-      ]
+        "Led cross-functional teams (Laravel, Vue.js, .NET, C++)",
+        "Facilitated client workshops with major construction players",
+        "Key role in company acquisition and growth strategy"
+      ],
+      techStack: "Laravel, Vue.js, Babylon.js, C#, Unity, AWS, Docker, CI/CD"
     },
     {
-      period: "2017 - 2020",
-      role: "Full Stack Lead Developer",
-      company: "Digital Innovations Ltd.",
-      description: "Led development of enterprise web applications using React, Node.js, and cloud technologies. Established coding standards and review processes for a growing engineering team.",
+      period: "2015 - 2019",
+      role: "Senior Software Engineer",
+      company: "Next IT Services",
+      description: "Gathered requirements, designed systems, and developed custom solutions for international clients including Knauf, Saint-Gobain, and Sto. Delivered specialized BIM tools and automation solutions.",
       achievements: [
-        "Built 5 major client applications",
-        "Established CI/CD pipeline",
-        "Improved code quality metrics by 60%"
-      ]
+        "Built Knauf International Plugin (Systemfinder)",
+        "Developed Sto BIM Cockpit automation tool",
+        "Mentored junior developers and provided technical leadership"
+      ],
+      techStack: "C#, .NET, C++, Revit/Archicad APIs, SQL Server, REST"
     },
     {
-      period: "2013 - 2017",
-      role: "Senior Software Developer",
-      company: "StartupVenture Co.",
-      description: "Core team member building scalable web applications from concept to production. Worked across the full stack with emphasis on performance optimization and user experience.",
-      achievements: [
-        "Optimized app performance by 70%",
-        "Implemented real-time features",
-        "Contributed to product strategy"
-      ]
-    },
-    {
-      period: "2011 - 2013",
+      period: "2012 - 2015",
       role: "Software Developer",
-      company: "Development Agency",
-      description: "Developed custom web solutions for various clients. Gained expertise in multiple programming languages and frameworks while working on diverse projects.",
+      company: "Mediatecture Ltd.",
+      description: "Designed and developed custom software solutions tailored to client needs. Built sustainable building design tools and maintained building materials databases for data-driven workflows.",
       achievements: [
-        "Delivered 15+ client projects",
-        "Mastered multiple tech stacks",
-        "Built client relationships"
-      ]
+        "Created ISOVER Multi Comfort Designer tool",
+        "Built and maintained building materials databases",
+        "Developed websites using CMS platforms"
+      ],
+      techStack: "PHP, HTML, CSS, Adobe Flash, Adobe AIR"
     }
   ];
 
@@ -79,13 +71,18 @@ const Experience = () => {
                   {exp.description}
                 </p>
                 
-                <div className="grid md:grid-cols-3 gap-2">
+                <div className="grid md:grid-cols-3 gap-2 mb-4">
                   {exp.achievements.map((achievement, achIndex) => (
                     <div key={achIndex} className="flex items-center text-sm text-foreground/80">
                       <div className="w-2 h-2 bg-primary rounded-full mr-2 flex-shrink-0"></div>
                       {achievement}
                     </div>
                   ))}
+                </div>
+                
+                <div className="pt-4 border-t border-border">
+                  <p className="text-xs text-muted-foreground font-medium mb-2">Tech Stack:</p>
+                  <p className="text-sm text-foreground/70">{exp.techStack}</p>
                 </div>
               </Card>
             ))}
