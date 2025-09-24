@@ -10,14 +10,14 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24">
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroImage})` }}
       />
       <div className="absolute inset-0 bg-gradient-to-br from-background/90 via-background/70 to-background/90" />
       
-      <div className="relative z-10 container mx-auto px-6 text-center pb-20">
+      <div className="relative z-10 container mx-auto px-6 text-center py-16">
         <div className="max-w-4xl mx-auto">
           <div className="mb-8">
             <Avatar className="w-32 h-32 mx-auto mb-6 border-4 border-primary/20">
@@ -43,7 +43,7 @@ const Hero = () => {
             Transforming ideas into robust software architectures while mentoring the next generation of developers
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
             <Button 
               size="lg"
               onClick={() => scrollToSection('projects')}
