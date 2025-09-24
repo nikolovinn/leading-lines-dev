@@ -1,5 +1,7 @@
 import { Button } from '@/components/ui/button';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 import heroImage from '@/assets/hero-bg.jpg';
+import profileImage from '@/assets/ivan-profile.jpg';
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -17,12 +19,20 @@ const Hero = () => {
       
       <div className="relative z-10 container mx-auto px-6 text-center">
         <div className="max-w-4xl mx-auto">
+          <div className="mb-8">
+            <Avatar className="w-32 h-32 mx-auto mb-6 border-4 border-primary/20">
+              <AvatarImage src={profileImage} alt="Ivan Nikolov" />
+              <AvatarFallback>IN</AvatarFallback>
+            </Avatar>
+          </div>
+          
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+            <span className="text-foreground mb-2 block text-2xl md:text-3xl font-normal">Hi, I'm</span>
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Software Developer
+              Ivan Nikolov
             </span>
             <br />
-            <span className="text-foreground">Leader</span>
+            <span className="text-foreground">Software Developer & Leader</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-4 max-w-2xl mx-auto">
