@@ -1,7 +1,5 @@
 import { Button } from '@/components/ui/button';
-import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 import heroImage from '@/assets/hero-bg.jpg';
-import profileImage from '@/assets/ivan-profile.jpg';
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
