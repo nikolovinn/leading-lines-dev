@@ -6,37 +6,51 @@ const Experience = () => {
       period: "2019 - 2025",
       role: "Head of Software Engineering",
       company: "Die Werkbank IT GmbH",
-      description: "Drove end-to-end development of innovative AEC software products (BIM&More, v.create) from ideation to market release. Bridged business stakeholders and development teams, designing scalable architecture for integration-heavy solutions.",
+      description:
+          "- Drove the end-to-end development of innovative AEC software products (BIM&More, v.create), from ideation and prototyping through to market release and client adoption.\n" +
+          "- Served as the bridge between business stakeholders and development teams, ensuring complex requirements were translated into actionable backlogs and prototypes.\n" +
+          "- Designed and implemented system architecture for scalable, integration-heavy solutions.\n" +
+          "- Led cross-functional teams of developers (Laravel, Vue.js, .NET, C++) and designers, overseeing architecture decisions, sprint planning, and budgets while fostering a culture of agile iteration.\n" +
+          "- Hired, coordinated, and managed external contractors, ensuring alignment with internal standards.\n" +
+          "- Regularly facilitated client workshops, demos, and feedback sessions with major construction industry players to ensure stakeholder alignment and adoption.\n" +
+          "- Played a key role in the company’s acquisition, aligning product vision, technical strategy, and innovation pipeline with business growth objectives.\n",
       achievements: [
-        "Led cross-functional teams (Laravel, Vue.js, .NET, C++)",
-        "Facilitated client workshops with major construction players",
-        "Key role in company acquisition and growth strategy"
+        "2 SaaS Products Launched",
+        "4x Scaled Team",
+        "Successfull Sell of the Company",
       ],
-      techStack: "Laravel, Vue.js, Babylon.js, C#, Unity, AWS, Docker, CI/CD"
+      techStack: "Laravel, PHP, Vue.js, JavaScript, Babylon.js, Revit API, C#, Unity, Archicad SDK, C++, AWS, Kubernetes, Docker, CI/CD"
     },
     {
       period: "2015 - 2019",
       role: "Senior Software Engineer",
       company: "Next IT Services",
-      description: "Gathered requirements, designed systems, and developed custom solutions for international clients including Knauf, Saint-Gobain, and Sto. Delivered specialized BIM tools and automation solutions.",
+      description: "- Gathered requirements, designed systems, and developed custom solutions for international clients (Knauf, Saint-Gobain, Sto).\n" +
+          "- Delivered Knauf International Plugin (Systemfinder): a tool for configuring construction systems and importing them into Revit/Archicad.\n" +
+          "- Developed the Sto BIM Cockpit, an internal tool for automating PDF and BIM outputs for the sales team, significantly reducing preparation time..\n" +
+          "- Mentored junior developers and contributed to technical leadership within the team.\n",
       achievements: [
-        "Built Knauf International Plugin (Systemfinder)",
-        "Developed Sto BIM Cockpit automation tool",
-        "Mentored junior developers and provided technical leadership"
+        "Tech Stack Modernization",
+        "Custom PHP to Laravel Migration",
+        "Blade to Vue.js Migration",
+        "Monolith to Microservices Migration",
       ],
-      techStack: "C#, .NET, C++, Revit/Archicad APIs, SQL Server, REST"
+      techStack: "Laravel, PHP, Vue.js, JavaScript, Babylon.js, Revit API, C#, Unity, Archicad SDK, C++"
     },
     {
       period: "2012 - 2015",
       role: "Software Developer",
       company: "Mediatecture Ltd.",
-      description: "Designed and developed custom software solutions tailored to client needs. Built sustainable building design tools and maintained building materials databases for data-driven workflows.",
+      description: "- Designed and developed custom software solutions tailored to client needs.\n" +
+          "- Built the ISOVER Constructions Multi Comfort Designer tool to support sustainable building design.\n" +
+          "- Created and maintained building materials databases to streamline data-driven workflows.\n" +
+          "- Developed and deployed websites using CMS platforms such as Joomla and WordPress.",
       achievements: [
         "Created ISOVER Multi Comfort Designer tool",
-        "Built and maintained building materials databases",
+        "Built and maintained building materials databases for Saint-Gobain",
         "Developed websites using CMS platforms"
       ],
-      techStack: "PHP, HTML, CSS, Adobe Flash, Adobe AIR"
+      techStack: "PHP, HTML, CSS, WordPress, Joomla,  Adobe Flash, Adobe AIR"
     }
   ];
 
@@ -67,7 +81,7 @@ const Experience = () => {
                   </div>
                 </div>
                 
-                <p className="text-muted-foreground mb-4 leading-relaxed">
+                <p className="text-muted-foreground mb-4 leading-relaxed whitespace-pre-line">
                   {exp.description}
                 </p>
                 

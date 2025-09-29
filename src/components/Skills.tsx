@@ -5,29 +5,28 @@ const Skills = () => {
     {
       title: "Leadership & Management",
       skills: [
-        "Team Leadership", "Agile/Scrum", "Strategic Planning", 
-        "Mentoring", "Cross-functional Collaboration", "Product Management"
-      ]
-    },
-    {
-      title: "Frontend Development",
-      skills: [
-        "React", "TypeScript", "Vue.js", "Angular", 
-        "Next.js", "Tailwind CSS", "GraphQL", "Webpack"
+        "Vision and Straregy", "Culture and Environment", "Team Leadership", "Risk Management",
+        "Resource Allocation", "Budgeting", "Efficiency", "Control"
       ]
     },
     {
       title: "Backend Development",
       skills: [
-        "Node.js", "Python", "Java", "C#", 
-        "PostgreSQL", "MongoDB", "Redis", "Microservices"
+        "Laravel", "PHP", "Nest.js", "C#", ".NET",
+        "PostgreSQL", "MySQL"
+      ]
+    },
+    {
+      title: "Frontend Development",
+      skills: [
+        "Livewire", "Vue.js", "React", "JavaScript", "TypeScript", "SaaS", "Unity"
       ]
     },
     {
       title: "DevOps & Architecture",
       skills: [
-        "AWS", "Docker", "Kubernetes", "CI/CD", 
-        "System Design", "Database Design", "API Design", "Security"
+        "AWS", "Azure", "Docker", "Portainer", "CI/CD",
+        "Solution Architecture", "Application Architecture"
       ]
     }
   ];

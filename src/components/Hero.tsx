@@ -19,13 +19,6 @@ const Hero = () => {
       
       <div className="relative z-10 container mx-auto px-6 text-center py-16">
         <div className="max-w-4xl mx-auto">
-          <div className="mb-8">
-            <Avatar className="w-32 h-32 mx-auto mb-6 border-4 border-primary/20">
-              <AvatarImage src={profileImage} alt="Ivan Nikolov" />
-              <AvatarFallback>IN</AvatarFallback>
-            </Avatar>
-          </div>
-          
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             <span className="text-foreground mb-2 block text-2xl md:text-3xl font-normal">Hi, I'm</span>
             <span className="bg-gradient-primary bg-clip-text text-transparent">

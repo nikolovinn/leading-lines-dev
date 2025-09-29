@@ -1,4 +1,6 @@
 import { Card } from '@/components/ui/card';
+import {Avatar, AvatarFallback, AvatarImage} from "@/components/ui/avatar.tsx";
+import profileImage from "@/assets/ivan-nikolov-rec.jpeg";
 
 const About = () => {
   const highlights = [
@@ -8,12 +10,22 @@ const About = () => {
       description: "Building enterprise software solutions"
     },
     {
-      number: "50+",
-      label: "Projects Delivered",
-      description: "From startups to Fortune 500 companies"
+      number: "1",
+      label: "Company Acquisition",
+      description: "Crucial contributor to the successful sale of our company."
     },
     {
-      number: "20+",
+      number: "2",
+      label: "SaaS Products",
+      description: "From idea to market release"
+    },
+    {
+      number: "30+",
+      label: "Projects Delivered",
+      description: "Mostly in the AEC industry"
+    },
+    {
+      number: "30+",
       label: "Developers Mentored",
       description: "Growing the next generation of talent"
     },
@@ -31,7 +43,12 @@ const About = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
             About <span className="bg-gradient-primary bg-clip-text text-transparent">Me</span>
           </h2>
-          
+          <div className="mb-20">
+            <Avatar className="w-64 h-64 mx-auto mb-6 border-4 border-primary/20">
+              <AvatarImage src={profileImage} alt="Ivan Nikolov" />
+              <AvatarFallback>IN</AvatarFallback>
+            </Avatar>
+          </div>
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
