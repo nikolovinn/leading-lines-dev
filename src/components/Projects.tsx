@@ -68,14 +68,7 @@ const Projects = () => {
                     ))}
                   </div>
                 </div>
-                
-                <Button 
-                  variant="outline" 
-                  size="sm"
-                  className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-                >
-                  Learn More
-                </Button>
+
               </Card>
             ))}
           </div>
