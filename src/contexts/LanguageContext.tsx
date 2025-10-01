@@ -31,7 +31,7 @@ const translations = {
     about: {
       title: "About",
       titleHighlight: "Me",
-      paragraph1: "My unique perspective comes from combining a Bachelor's in Information and Communication Technology from VIA University College in Horsens, Denmark, with a Master's in IT Product Design. This dual foundation gives me both deep technical expertise and a profound understanding of users, business context, and design thinking.",
+      paragraph1: "My unique perspective comes from combining a Bachelor's in Information and Communication Technology, with a Master's in IT Product Design. This dual foundation gives me both deep technical expertise and a profound understanding of users, business context, and design thinking.",
       paragraph2: "With over 13 years in software development, I've evolved from a passionate coder to a strategic technical leader who bridges the gap between complex technical solutions and real user needs. I don't just build software—I craft experiences that solve meaningful problems.",
       paragraph3: "This rare combination of technical mastery and user-centered design thinking is my USP. I lead teams that build scalable, maintainable solutions while always keeping the end user and business objectives at the heart of every decision.",
       highlights: {
@@ -184,7 +184,7 @@ const translations = {
     about: {
       title: "Über",
       titleHighlight: "mich",
-      paragraph1: "Meine einzigartige Perspektive entsteht aus der Kombination eines Bachelor-Abschlusses in Informations- und Kommunikationstechnologie der VIA University College in Horsens, Dänemark, mit einem Master in IT-Produktdesign. Diese duale Grundlage verleiht mir sowohl tiefgreifende technische Expertise als auch ein profundes Verständnis für Nutzer, Geschäftskontext und Design Thinking.",
+      paragraph1: "Meine einzigartige Perspektive entsteht aus der Kombination eines Bachelor-Abschlusses in Informations- und Kommunikationstechnologie, mit einem Master in IT-Produktdesign. Diese duale Grundlage verleiht mir sowohl tiefgreifende technische Expertise als auch ein profundes Verständnis für Nutzer, Geschäftskontext und Design Thinking.",
       paragraph2: "Mit über 13 Jahren in der Softwareentwicklung habe ich mich von einem leidenschaftlichen Programmierer zu einem strategischen technischen Leiter entwickelt, der die Lücke zwischen komplexen technischen Lösungen und echten Nutzerbedürfnissen schließt. Ich baue nicht nur Software – ich schaffe Erlebnisse, die bedeutungsvolle Probleme lösen.",
       paragraph3: "Diese seltene Kombination aus technischer Meisterschaft und nutzerzentriertem Design Thinking ist mein USP. Ich führe Teams, die skalierbare, wartbare Lösungen entwickeln und dabei immer den Endnutzer und die Geschäftsziele im Mittelpunkt jeder Entscheidung behalten.",
       highlights: {
