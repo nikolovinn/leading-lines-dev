@@ -22,7 +22,7 @@ const translations = {
     hero: {
       greeting: "Hi, I'm",
       name: "Ivan Nikolov",
-      title: "Software Developer & Innovation Manager",
+      title: "Software Engineer & Innovation Manager",
       subtitle: "13 years of experience building scalable solutions and leading high-performing development teams",
       description: "Transforming ideas into robust software architectures while mentoring the next generation of developers",
       viewWork: "View My Work",
@@ -46,7 +46,41 @@ const translations = {
     experience: {
       title: "Professional",
       titleHighlight: "Experience",
-      techStack: "Tech Stack:"
+      techStack: "Tech Stack:",
+      // Head of Software Engineering position
+      headPeriod: "2019 - 2025",
+      headRole: "Head of Software Engineering",
+      headCompany: "Die Werkbank IT GmbH",
+      headDescription: "- Drove the end-to-end development of innovative AEC software products (BIM&More, v.create), from ideation and prototyping through to market release and client adoption.\n- Served as the bridge between business stakeholders and development teams, ensuring complex requirements were translated into actionable backlogs and prototypes.\n- Designed and implemented system architecture for scalable, integration-heavy solutions.\n- Led cross-functional teams of developers (Laravel, Vue.js, .NET, C++) and designers, overseeing architecture decisions, sprint planning, and budgets while fostering a culture of agile iteration.\n- Hired, coordinated, and managed external contractors, ensuring alignment with internal standards.\n- Regularly facilitated client workshops, demos, and feedback sessions with major construction industry players to ensure stakeholder alignment and adoption.\n- Played a key role in the company's acquisition, aligning product vision, technical strategy, and innovation pipeline with business growth objectives.\n",
+      headAchievements: [
+        "2 SaaS Products Launched",
+        "4x Scaled Team",
+        "Successfull Sell of the Company"
+      ],
+      headTechStack: "Laravel, PHP, Vue.js, JavaScript, Babylon.js, Revit API, C#, Unity, Archicad SDK, C++, AWS, Kubernetes, Docker, CI/CD",
+      // Senior Software Engineer position
+      seniorPeriod: "2015 - 2019",
+      seniorRole: "Senior Software Engineer",
+      seniorCompany: "Next IT Services",
+      seniorDescription: "- Gathered requirements, designed systems, and developed custom solutions for international clients (Knauf, Saint-Gobain, Sto).\n- Delivered Knauf International Plugin (Systemfinder): a tool for configuring construction systems and importing them into Revit/Archicad.\n- Developed the Sto BIM Cockpit, an internal tool for automating PDF and BIM outputs for the sales team, significantly reducing preparation time.\n- Mentored junior developers and contributed to technical leadership within the team.\n",
+      seniorAchievements: [
+        "Tech Stack Modernization",
+        "Custom PHP to Laravel Migration",
+        "Blade to Vue.js Migration",
+        "Monolith to Microservices Migration"
+      ],
+      seniorTechStack: "Laravel, PHP, Vue.js, JavaScript, Babylon.js, Revit API, C#, Unity, Archicad SDK, C++",
+      // Software Developer position
+      devPeriod: "2012 - 2015",
+      devRole: "Software Developer",
+      devCompany: "Mediatecture Ltd.",
+      devDescription: "- Designed and developed custom software solutions tailored to client needs.\n- Built the ISOVER Constructions Multi Comfort Designer tool to support sustainable building design.\n- Created and maintained building materials databases to streamline data-driven workflows.\n- Developed and deployed websites using CMS platforms such as Joomla and WordPress.",
+      devAchievements: [
+        "Created ISOVER Multi Comfort Designer tool",
+        "Built and maintained building materials databases for Saint-Gobain",
+        "Developed websites using CMS platforms"
+      ],
+      devTechStack: "PHP, HTML, CSS, WordPress, Joomla, Adobe Flash, Adobe AIR"
     },
     education: {
       title: "Educational",
@@ -98,7 +132,21 @@ const translations = {
       title: "Featured",
       titleHighlight: "Projects",
       keyImpact: "Key Impact:",
-      technologies: "Technologies:"
+      technologies: "Technologies:",
+      bimMore: {
+        title: "BIM&More – Sustainable BIM Data Platform",
+        description: "Digital product suite for the AEC industry, with BIM-Cockpit as its core platform. It acts as a central hub for BIM data management, integrating geometry, attributes, classifications, and project-specific delivery directly into CAD/BIM workflows (Revit, Archicad).\n\nI was part of defined the product vision and architecture, and led cross-functional teams. I have also managed numerous PoCs and pilot projects with customers like KLB, Sto and Autobahn GmbH. I could represented the product in investor presentations during the successful acquisition of the company.",
+        technologies: ["Laravel", "Vue.js", "PostgresSQL", "Archicad SDK", "Revit API", "Kubernetes", "Docker", "CI/CD"],
+        impact: "- Adoption by leading manufacturers and infrastructure projects.\n- Automated BIM workflows → faster planning, fewer errors, and compliance with industry standards.",
+        type: "Software Architecture, Product Management"
+      },
+      vCreate: {
+        title: "v.create",
+        description: "Enterprise-level SaaS platform for the rapid configuration of large office spaces. Designed as a serious game with Unity, v.create streamlines space planning by combining immersive 3D visualisation with intelligent automation.\n\nAs Head of Engineering of Die Werkbank IT, I was involved from the earliest stage — from shaping the idea, prototyping, and concept development to leading implementation and supporting market deployment. I oversaw the technical architecture, integration with BIM systems, and the design of the SaaS infrastructure.",
+        technologies: ["Laravel", "Vue.js", "Revit API", "Unity", "AWS", "Kubernetes", "Docker", "CI/CD"],
+        impact: "- Reduces the time and cost of configuring complex office environments.\n- Adapt workplaces faster, with fewer resources, and with measurable sustainability benefits",
+        type: "Software Architecture, Product Management"
+      }
     },
     contact: {
       title: "Let's",
@@ -121,13 +169,13 @@ const translations = {
       experience: "Erfahrung",
       education: "Ausbildung",
       skills: "Fähigkeiten",
-      projects: "Projekte",
+      projects: "Projekte", // Keep this basic nav translation
       contact: "Kontakt"
     },
     hero: {
       greeting: "Hallo, ich bin",
       name: "Ivan Nikolov",
-      title: "Softwareentwickler & Innovationsmanager",
+      title: "Softwareingenieur & Innovationsmanager",
       subtitle: "13 Jahre Erfahrung im Aufbau skalierbarer Lösungen und der Leitung leistungsstarker Entwicklungsteams",
       description: "Ideen in robuste Softwarearchitekturen verwandeln und gleichzeitig die nächste Generation von Entwicklern fördern",
       viewWork: "Meine Arbeit ansehen",
@@ -151,7 +199,41 @@ const translations = {
     experience: {
       title: "Berufliche",
       titleHighlight: "Erfahrung",
-      techStack: "Tech-Stack:"
+      techStack: "Tech-Stack:",
+      // Head of Software Engineering position
+      headPeriod: "2019 - 2025",
+      headRole: "Leiter der Softwareentwicklung",
+      headCompany: "Die Werkbank IT GmbH",
+      headDescription: "- Leitete die End-to-End-Entwicklung innovativer AEC-Softwareprodukte (BIM&More, v.create), von der Ideenfindung und Prototypentwicklung bis zur Markteinführung und Kundenadoption.\n- Fungierte als Bindeglied zwischen Geschäftspartnern und Entwicklungsteams und stellte sicher, dass komplexe Anforderungen in umsetzbare Backlogs und Prototypen übersetzt wurden.\n- Entwarf und implementierte Systemarchitektur für skalierbare, integrationslastige Lösungen.\n- Leitete funktionsübergreifende Teams von Entwicklern (Laravel, Vue.js, .NET, C++) und Designern, überwachte Architekturentscheidungen, Sprint-Planung und Budgets und förderte eine Kultur der agilen Iteration.\n- Rekrutierte, koordinierte und managte externe Auftragnehmer unter Gewährleistung der Einhaltung interner Standards.\n- Führte regelmäßig Kundenworkshops, Demos und Feedback-Sessions mit wichtigen Akteuren der Bauindustrie durch, um die Abstimmung und Akzeptanz der Stakeholder sicherzustellen.\n- Spielte eine Schlüsselrolle bei der Übernahme des Unternehmens und stimmte Produktvision, technische Strategie und Innovationspipeline mit den geschäftlichen Wachstumszielen ab.\n",
+      headAchievements: [
+        "2 SaaS-Produkte eingeführt",
+        "Team 4-fach vergrößert",
+        "Erfolgreicher Unternehmensverkauf"
+      ],
+      headTechStack: "Laravel, PHP, Vue.js, JavaScript, Babylon.js, Revit API, C#, Unity, Archicad SDK, C++, AWS, Kubernetes, Docker, CI/CD",
+      // Senior Software Engineer position
+      seniorPeriod: "2015 - 2019",
+      seniorRole: "Senior Softwareentwickler",
+      seniorCompany: "Next IT Services",
+      seniorDescription: "- Erfasste Anforderungen, entwarf Systeme und entwickelte maßgeschneiderte Lösungen für internationale Kunden (Knauf, Saint-Gobain, Sto).\n- Lieferte Knauf International Plugin (Systemfinder): ein Tool zur Konfiguration von Bausystemen und deren Import in Revit/Archicad.\n- Entwickelte das Sto BIM Cockpit, ein internes Tool zur Automatisierung von PDF- und BIM-Outputs für das Vertriebsteam, was die Vorbereitungszeit erheblich reduzierte.\n- Mentoring von Junior-Entwicklern und Beitrag zur technischen Führung im Team.\n",
+      seniorAchievements: [
+        "Tech-Stack Modernisierung",
+        "Custom PHP zu Laravel Migration",
+        "Blade zu Vue.js Migration",
+        "Monolith zu Microservices Migration"
+      ],
+      seniorTechStack: "Laravel, PHP, Vue.js, JavaScript, Babylon.js, Revit API, C#, Unity, Archicad SDK, C++",
+      // Software Developer position
+      devPeriod: "2012 - 2015",
+      devRole: "Softwareentwickler",
+      devCompany: "Mediatecture Ltd.",
+      devDescription: "- Entwarf und entwickelte maßgeschneiderte Softwarelösungen nach Kundenbedürfnissen.\n- Entwickelte das ISOVER Constructions Multi Comfort Designer Tool zur Unterstützung nachhaltiger Gebäudeplanung.\n- Erstellte und pflegte Datenbanken für Baumaterialien zur Optimierung datengesteuerter Workflows.\n- Entwickelte und implementierte Websites mit CMS-Plattformen wie Joomla und WordPress.",
+      devAchievements: [
+        "ISOVER Multi Comfort Designer Tool erstellt",
+        "Baumaterialien-Datenbanken für Saint-Gobain aufgebaut und gepflegt",
+        "Websites mit CMS-Plattformen entwickelt"
+      ],
+      devTechStack: "PHP, HTML, CSS, WordPress, Joomla, Adobe Flash, Adobe AIR"
     },
     education: {
       title: "Akademischer",
@@ -199,11 +281,25 @@ const translations = {
         skills: ["AWS", "Azure", "Docker", "Portainer", "CI/CD", "Lösungsarchitektur", "Anwendungsarchitektur"]
       }
     },
-    projects: {
+    projects: { // Move the full projects section here, at root level
       title: "Ausgewählte",
       titleHighlight: "Projekte",
       keyImpact: "Hauptauswirkung:",
-      technologies: "Technologien:"
+      technologies: "Technologien:",
+      bimMore: {
+        title: "BIM&More – Nachhaltige BIM-Datenplattform",
+        description: "Digitale Produktsuite für die AEC-Branche mit BIM-Cockpit als Kernplattform. Sie fungiert als zentrale Drehscheibe für das BIM-Datenmanagement und integriert Geometrie, Attribute, Klassifizierungen und projektspezifische Lieferungen direkt in CAD/BIM-Workflows (Revit, Archicad).\n\nIch war an der Definition der Produktvision und Architektur beteiligt und leitete funktionsübergreifende Teams. Außerdem habe ich zahlreiche PoCs und Pilotprojekte mit Kunden wie KLB, Sto und der Autobahn GmbH betreut. Ich konnte das Produkt in Investorenpräsentationen während der erfolgreichen Übernahme des Unternehmens vertreten.",
+        technologies: ["Laravel", "Vue.js", "PostgresSQL", "Archicad SDK", "Revit API", "Kubernetes", "Docker", "CI/CD"],
+        impact: "- Einführung bei führenden Herstellern und Infrastrukturprojekten.\n- Automatisierte BIM-Workflows → schnellere Planung, weniger Fehler und Einhaltung von Industriestandards.",
+        type: "Softwarearchitektur, Produktmanagement"
+      },
+      vCreate: {
+        title: "v.create",
+        description: "Enterprise-Level SaaS-Plattform für die schnelle Konfiguration großer Büroflächen. Konzipiert als Serious Game mit Unity, optimiert v.create die Raumplanung durch die Kombination von immersiver 3D-Visualisierung mit intelligenter Automatisierung.\n\nAls Head of Engineering von Die Werkbank IT war ich von der ersten Stunde an dabei - von der Ideenfindung, Prototyping und Konzeptentwicklung bis hin zur Leitung der Implementierung und Unterstützung der Markteinführung. Ich überwachte die technische Architektur, die Integration mit BIM-Systemen und das Design der SaaS-Infrastruktur.",
+        technologies: ["Laravel", "Vue.js", "Revit API", "Unity", "AWS", "Kubernetes", "Docker", "CI/CD"],
+        impact: "- Reduziert Zeit und Kosten für die Konfiguration komplexer Büroumgebungen.\n- Schnellere Anpassung von Arbeitsplätzen mit weniger Ressourcen und messbaren Nachhaltigkeitsvorteilen",
+        type: "Softwarearchitektur, Produktmanagement"
+      }
     },
     contact: {
       title: "Lassen Sie uns",

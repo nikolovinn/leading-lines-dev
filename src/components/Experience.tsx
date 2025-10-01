@@ -6,54 +6,28 @@ const Experience = () => {
   
   const experiences = [
     {
-      period: "2019 - 2025",
-      role: "Head of Software Engineering",
-      company: "Die Werkbank IT GmbH",
-      description:
-          "- Drove the end-to-end development of innovative AEC software products (BIM&More, v.create), from ideation and prototyping through to market release and client adoption.\n" +
-          "- Served as the bridge between business stakeholders and development teams, ensuring complex requirements were translated into actionable backlogs and prototypes.\n" +
-          "- Designed and implemented system architecture for scalable, integration-heavy solutions.\n" +
-          "- Led cross-functional teams of developers (Laravel, Vue.js, .NET, C++) and designers, overseeing architecture decisions, sprint planning, and budgets while fostering a culture of agile iteration.\n" +
-          "- Hired, coordinated, and managed external contractors, ensuring alignment with internal standards.\n" +
-          "- Regularly facilitated client workshops, demos, and feedback sessions with major construction industry players to ensure stakeholder alignment and adoption.\n" +
-          "- Played a key role in the company’s acquisition, aligning product vision, technical strategy, and innovation pipeline with business growth objectives.\n",
-      achievements: [
-        "2 SaaS Products Launched",
-        "4x Scaled Team",
-        "Successfull Sell of the Company",
-      ],
-      techStack: "Laravel, PHP, Vue.js, JavaScript, Babylon.js, Revit API, C#, Unity, Archicad SDK, C++, AWS, Kubernetes, Docker, CI/CD"
+      period: t.experience.headPeriod,
+      role: t.experience.headRole,
+      company: t.experience.headCompany,
+      description: t.experience.headDescription,
+      achievements: t.experience.headAchievements,
+      techStack: t.experience.headTechStack
     },
     {
-      period: "2015 - 2019",
-      role: "Senior Software Engineer",
-      company: "Next IT Services",
-      description: "- Gathered requirements, designed systems, and developed custom solutions for international clients (Knauf, Saint-Gobain, Sto).\n" +
-          "- Delivered Knauf International Plugin (Systemfinder): a tool for configuring construction systems and importing them into Revit/Archicad.\n" +
-          "- Developed the Sto BIM Cockpit, an internal tool for automating PDF and BIM outputs for the sales team, significantly reducing preparation time..\n" +
-          "- Mentored junior developers and contributed to technical leadership within the team.\n",
-      achievements: [
-        "Tech Stack Modernization",
-        "Custom PHP to Laravel Migration",
-        "Blade to Vue.js Migration",
-        "Monolith to Microservices Migration",
-      ],
-      techStack: "Laravel, PHP, Vue.js, JavaScript, Babylon.js, Revit API, C#, Unity, Archicad SDK, C++"
+      period: t.experience.seniorPeriod,
+      role: t.experience.seniorRole,
+      company: t.experience.seniorCompany,
+      description: t.experience.seniorDescription,
+      achievements: t.experience.seniorAchievements,
+      techStack: t.experience.seniorTechStack
     },
     {
-      period: "2012 - 2015",
-      role: "Software Developer",
-      company: "Mediatecture Ltd.",
-      description: "- Designed and developed custom software solutions tailored to client needs.\n" +
-          "- Built the ISOVER Constructions Multi Comfort Designer tool to support sustainable building design.\n" +
-          "- Created and maintained building materials databases to streamline data-driven workflows.\n" +
-          "- Developed and deployed websites using CMS platforms such as Joomla and WordPress.",
-      achievements: [
-        "Created ISOVER Multi Comfort Designer tool",
-        "Built and maintained building materials databases for Saint-Gobain",
-        "Developed websites using CMS platforms"
-      ],
-      techStack: "PHP, HTML, CSS, WordPress, Joomla,  Adobe Flash, Adobe AIR"
+      period: t.experience.devPeriod,
+      role: t.experience.devRole,
+      company: t.experience.devCompany,
+      description: t.experience.devDescription,
+      achievements: t.experience.devAchievements,
+      techStack: t.experience.devTechStack
     }
   ];
 
