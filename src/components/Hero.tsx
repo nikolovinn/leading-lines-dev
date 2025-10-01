@@ -23,7 +23,7 @@ const Hero = () => {
               Ivan Nikolov
             </span>
             <br />
-            <span className="text-foreground">Software Developer & Leader</span>
+            <span className="text-foreground">Software Developer & Innovation Manager</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-4 max-w-2xl mx-auto">
