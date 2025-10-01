@@ -87,8 +87,8 @@ const translations = {
       titleHighlight: "Background",
       masterPeriod: "Master's Degree",
       masterDegree: "IT Product Design",
-      masterInstitution: "VIA University College",
-      masterLocation: "Horsens, Denmark",
+      masterInstitution: "University of Southern Denmark",
+      masterLocation: "Kolding, Denmark",
       masterDescription: "Advanced studies focusing on user-centered design, product strategy, and the intersection of technology and business needs. Developed expertise in design thinking, user research, and product management methodologies.",
       masterHighlights: [
         "User-centered design methodologies",
@@ -240,8 +240,8 @@ const translations = {
       titleHighlight: "Hintergrund",
       masterPeriod: "Master-Abschluss",
       masterDegree: "IT-Produktdesign",
-      masterInstitution: "VIA University College",
-      masterLocation: "Horsens, Dänemark",
+      masterInstitution: "University of Southern Denmark",
+      masterLocation: "Kolding, Dänemark",
       masterDescription: "Fortgeschrittenes Studium mit Schwerpunkt auf nutzerzentriertem Design, Produktstrategie und der Schnittstelle zwischen Technologie und Geschäftsanforderungen. Entwicklung von Expertise in Design Thinking, Nutzerforschung und Produktmanagement-Methoden.",
       masterHighlights: [
         "Nutzerzentrierte Design-Methoden",
