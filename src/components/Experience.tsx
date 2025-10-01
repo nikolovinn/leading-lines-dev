@@ -1,6 +1,9 @@
 import { Card } from '@/components/ui/card';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const Experience = () => {
+  const { t } = useLanguage();
+  
   const experiences = [
     {
       period: "2019 - 2025",
@@ -59,7 +62,7 @@ const Experience = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
-            Professional <span className="bg-gradient-primary bg-clip-text text-transparent">Experience</span>
+            {t.experience.title} <span className="bg-gradient-primary bg-clip-text text-transparent">{t.experience.titleHighlight}</span>
           </h2>
           
           <div className="space-y-8">
@@ -95,7 +98,7 @@ const Experience = () => {
                 </div>
                 
                 <div className="pt-4 border-t border-border">
-                  <p className="text-xs text-muted-foreground font-medium mb-2">Tech Stack:</p>
+                  <p className="text-xs text-muted-foreground font-medium mb-2">{t.experience.techStack}</p>
                   <p className="text-sm text-foreground/70">{exp.techStack}</p>
                 </div>
               </Card>

@@ -1,33 +1,25 @@
 import { Card } from '@/components/ui/card';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const Skills = () => {
+  const { t } = useLanguage();
+
   const skillCategories = [
     {
-      title: "Leadership & Management",
-      skills: [
-        "Vision and Straregy", "Culture and Environment", "Team Leadership", "Risk Management",
-        "Resource Allocation", "Budgeting", "Efficiency", "Control"
-      ]
+      title: t.skills.leadership.title,
+      skills: t.skills.leadership.skills
     },
     {
-      title: "Backend Development",
-      skills: [
-        "Laravel", "PHP", "Nest.js", "C#", ".NET",
-        "PostgreSQL", "MySQL"
-      ]
+      title: t.skills.backend.title,
+      skills: t.skills.backend.skills
     },
     {
-      title: "Frontend Development",
-      skills: [
-        "Livewire", "Vue.js", "React", "JavaScript", "TypeScript", "SaaS", "Unity"
-      ]
+      title: t.skills.frontend.title,
+      skills: t.skills.frontend.skills
     },
     {
-      title: "DevOps & Architecture",
-      skills: [
-        "AWS", "Azure", "Docker", "Portainer", "CI/CD",
-        "Solution Architecture", "Application Architecture"
-      ]
+      title: t.skills.devops.title,
+      skills: t.skills.devops.skills
     }
   ];
 
@@ -36,7 +28,7 @@ const Skills = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
-            Skills & <span className="bg-gradient-primary bg-clip-text text-transparent">Expertise</span>
+            {t.skills.title} <span className="bg-gradient-primary bg-clip-text text-transparent">{t.skills.titleHighlight}</span>
           </h2>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">

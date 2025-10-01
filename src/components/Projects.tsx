@@ -1,7 +1,10 @@
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const Projects = () => {
+  const { t } = useLanguage();
+  
   const projects = [
     {
       title: "BIM&More – Sustainable BIM Data Platform",
@@ -28,7 +31,7 @@ const Projects = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
-            Featured <span className="bg-gradient-primary bg-clip-text text-transparent">Projects</span>
+            {t.projects.title} <span className="bg-gradient-primary bg-clip-text text-transparent">{t.projects.titleHighlight}</span>
           </h2>
           
           <div className="grid md:grid-cols-2 gap-8">
@@ -49,14 +52,14 @@ const Projects = () => {
                 </p>
                 
                 <div className="mb-4">
-                  <p className="text-sm font-medium text-foreground mb-2">Key Impact:</p>
+                  <p className="text-sm font-medium text-foreground mb-2">{t.projects.keyImpact}</p>
                   <p className="text-sm text-primary font-medium whitespace-break-spaces">
                     {project.impact}
                   </p>
                 </div>
                 
                 <div className="mb-6">
-                  <p className="text-sm font-medium text-foreground mb-2">Technologies:</p>
+                  <p className="text-sm font-medium text-foreground mb-2">{t.projects.technologies}</p>
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech, techIndex) => (
                       <span 

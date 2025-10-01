@@ -1,30 +1,25 @@
 import { Card } from '@/components/ui/card';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const Education = () => {
+  const { t } = useLanguage();
+
   const education = [
     {
-      period: "Master's Degree",
-      degree: "IT Product Design",
-      institution: "VIA University College",
-      location: "Horsens, Denmark",
-      description: "Advanced studies focusing on user-centered design, product strategy, and the intersection of technology and business needs. Developed expertise in design thinking, user research, and product management methodologies.",
-      highlights: [
-        "User-centered design methodologies",
-        "Product strategy and business analysis",
-        "Design thinking and innovation processes"
-      ]
+      period: t.education.masterPeriod,
+      degree: t.education.masterDegree,
+      institution: t.education.masterInstitution,
+      location: t.education.masterLocation,
+      description: t.education.masterDescription,
+      highlights: t.education.masterHighlights
     },
     {
-      period: "Bachelor's Degree",
-      degree: "Information and Communication Technology",
-      institution: "VIA University College", 
-      location: "Horsens, Denmark",
-      description: "Comprehensive technical foundation covering software development, system design, and modern programming practices. Built strong expertise in multiple programming languages and development frameworks.",
-      highlights: [
-        "Software development and architecture",
-        "System design and implementation",
-        "Programming languages and frameworks"
-      ]
+      period: t.education.bachelorPeriod,
+      degree: t.education.bachelorDegree,
+      institution: t.education.bachelorInstitution, 
+      location: t.education.bachelorLocation,
+      description: t.education.bachelorDescription,
+      highlights: t.education.bachelorHighlights
     }
   ];
 
@@ -33,7 +28,7 @@ const Education = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
-            Educational <span className="bg-gradient-primary bg-clip-text text-transparent">Background</span>
+            {t.education.title} <span className="bg-gradient-primary bg-clip-text text-transparent">{t.education.titleHighlight}</span>
           </h2>
           
           <div className="space-y-8">
@@ -77,12 +72,10 @@ const Education = () => {
           <div className="mt-12 text-center">
             <Card className="p-6 bg-gradient-primary/5 border-primary/20">
               <h3 className="text-lg font-semibold text-foreground mb-2">
-                Dual Perspective Advantage
+                {t.education.advantageTitle}
               </h3>
               <p className="text-muted-foreground">
-                This unique combination of technical expertise and design thinking allows me to bridge 
-                the gap between complex technical solutions and meaningful user experiences, making me 
-                an effective leader who understands both the "how" and the "why" of software development.
+                {t.education.advantageDescription}
               </p>
             </Card>
           </div>

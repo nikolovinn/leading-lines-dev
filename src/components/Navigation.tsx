@@ -1,7 +1,10 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
+import { useLanguage } from '@/contexts/LanguageContext';
+import { Globe } from 'lucide-react';
 
 const Navigation = () => {
+  const { language, setLanguage, t } = useLanguage();
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -24,7 +27,7 @@ const Navigation = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-            Ivan Nikolov
+            {t.nav.name}
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
@@ -32,39 +35,47 @@ const Navigation = () => {
               onClick={() => scrollToSection('about')}
               className="text-foreground/80 hover:text-primary transition-colors"
             >
-              About
+              {t.nav.about}
             </button>
             <button 
               onClick={() => scrollToSection('experience')}
               className="text-foreground/80 hover:text-primary transition-colors"
             >
-              Experience
+              {t.nav.experience}
             </button>
             <button 
               onClick={() => scrollToSection('education')}
               className="text-foreground/80 hover:text-primary transition-colors"
             >
-              Education
+              {t.nav.education}
             </button>
             <button 
               onClick={() => scrollToSection('skills')}
               className="text-foreground/80 hover:text-primary transition-colors"
             >
-              Skills
+              {t.nav.skills}
             </button>
             <button 
               onClick={() => scrollToSection('projects')}
               className="text-foreground/80 hover:text-primary transition-colors"
             >
-              Projects
+              {t.nav.projects}
             </button>
             <Button 
               onClick={() => scrollToSection('contact')}
               variant="outline"
               className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
             >
-              Contact
+              {t.nav.contact}
             </Button>
+            <button
+              onClick={() => setLanguage(language === 'en' ? 'de' : 'en')}
+              className="flex items-center gap-2 text-foreground/80 hover:text-primary transition-colors"
+              aria-label="Toggle language"
+            >
+              <Globe className="w-4 h-4" />
+              <span className="text-sm font-medium">{language === 'en' ? 'DE' : 'EN'}</span>
+            </button>
           </div>
         </div>
       </div>

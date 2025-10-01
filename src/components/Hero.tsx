@@ -1,7 +1,10 @@
 import { Button } from '@/components/ui/button';
+import { useLanguage } from '@/contexts/LanguageContext';
 import heroImage from '@/assets/hero-bg.jpg';
 
 const Hero = () => {
+  const { t } = useLanguage();
+  
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     element?.scrollIntoView({ behavior: 'smooth' });
@@ -18,20 +21,20 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-6 text-center py-16">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            <span className="text-foreground mb-2 block text-2xl md:text-3xl font-normal">Hi, I'm</span>
+            <span className="text-foreground mb-2 block text-2xl md:text-3xl font-normal">{t.hero.greeting}</span>
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Ivan Nikolov
+              {t.hero.name}
             </span>
             <br />
-            <span className="text-foreground">Software Developer & Innovation Manager</span>
+            <span className="text-foreground">{t.hero.title}</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-4 max-w-2xl mx-auto">
-            13 years of experience building scalable solutions and leading high-performing development teams
+            {t.hero.subtitle}
           </p>
           
           <p className="text-lg text-muted-foreground/80 mb-8 max-w-xl mx-auto">
-            Transforming ideas into robust software architectures while mentoring the next generation of developers
+            {t.hero.description}
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
@@ -40,7 +43,7 @@ const Hero = () => {
               onClick={() => scrollToSection('projects')}
               className="bg-gradient-primary hover:shadow-glow transition-all duration-300 text-lg px-8 py-6"
             >
-              View My Work
+              {t.hero.viewWork}
             </Button>
             <Button 
               size="lg"
@@ -48,7 +51,7 @@ const Hero = () => {
               onClick={() => scrollToSection('contact')}
               className="border-primary text-primary hover:bg-primary hover:text-primary-foreground text-lg px-8 py-6"
             >
-              Get In Touch
+              {t.hero.getInTouch}
             </Button>
           </div>
         </div>

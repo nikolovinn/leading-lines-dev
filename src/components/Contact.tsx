@@ -1,21 +1,24 @@
 import { Card } from '@/components/ui/card';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const Contact = () => {
+  const { t } = useLanguage();
+  
   const contactMethods = [
     {
-      title: "Phone",
+      title: t.contact.phone,
       value: "+43 (0) 660 45 132 46",
-      description: "Professional networking and career opportunities"
+      description: ""
     },
     {
-      title: "Email",
+      title: t.contact.email,
       value: "nikolov.inn@gmail.com",
-      description: "Best for detailed discussions and project inquiries"
+      description: ""
     },
     {
-      title: "LinkedIn",
+      title: t.contact.linkedin,
       value: "https://tinyurl.com/nikolovinn",
-      description: "Professional networking and career opportunities"
+      description: ""
     }
   ];
 
@@ -24,12 +27,11 @@ const Contact = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-8">
-            Let's <span className="bg-gradient-primary bg-clip-text text-transparent">Connect</span>
+            {t.contact.title} <span className="bg-gradient-primary bg-clip-text text-transparent">{t.contact.titleHighlight}</span>
           </h2>
           
           <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
-            Interested in collaboration, have a project in mind, or just want to discuss technology? 
-            I'd love to hear from you.
+            {t.contact.subtitle}
           </p>
           
           <div className="grid md:grid-cols-3 gap-6 mb-12">
