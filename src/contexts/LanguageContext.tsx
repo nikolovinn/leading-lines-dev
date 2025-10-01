@@ -46,7 +46,46 @@ const translations = {
     experience: {
       title: "Professional",
       titleHighlight: "Experience",
-      techStack: "Tech Stack:"
+      techStack: "Tech Stack:",
+      experiences: [
+        {
+          period: "2019 - 2025",
+          role: "Head of Software Engineering",
+          company: "Die Werkbank IT GmbH",
+          description: "- Drove the end-to-end development of innovative AEC software products (BIM&More, v.create), from ideation and prototyping through to market release and client adoption.\n- Served as the bridge between business stakeholders and development teams, ensuring complex requirements were translated into actionable backlogs and prototypes.\n- Designed and implemented system architecture for scalable, integration-heavy solutions.\n- Led cross-functional teams of developers (Laravel, Vue.js, .NET, C++) and designers, overseeing architecture decisions, sprint planning, and budgets while fostering a culture of agile iteration.\n- Hired, coordinated, and managed external contractors, ensuring alignment with internal standards.\n- Regularly facilitated client workshops, demos, and feedback sessions with major construction industry players to ensure stakeholder alignment and adoption.\n- Played a key role in the company's acquisition, aligning product vision, technical strategy, and innovation pipeline with business growth objectives.",
+          achievements: [
+            "2 SaaS Products Launched",
+            "4x Scaled Team",
+            "Successfull Sell of the Company"
+          ],
+          techStack: "Laravel, PHP, Vue.js, JavaScript, Babylon.js, Revit API, C#, Unity, Archicad SDK, C++, AWS, Kubernetes, Docker, CI/CD"
+        },
+        {
+          period: "2015 - 2019",
+          role: "Senior Software Engineer",
+          company: "Next IT Services",
+          description: "- Gathered requirements, designed systems, and developed custom solutions for international clients (Knauf, Saint-Gobain, Sto).\n- Delivered Knauf International Plugin (Systemfinder): a tool for configuring construction systems and importing them into Revit/Archicad.\n- Developed the Sto BIM Cockpit, an internal tool for automating PDF and BIM outputs for the sales team, significantly reducing preparation time..\n- Mentored junior developers and contributed to technical leadership within the team.",
+          achievements: [
+            "Tech Stack Modernization",
+            "Custom PHP to Laravel Migration",
+            "Blade to Vue.js Migration",
+            "Monolith to Microservices Migration"
+          ],
+          techStack: "Laravel, PHP, Vue.js, JavaScript, Babylon.js, Revit API, C#, Unity, Archicad SDK, C++"
+        },
+        {
+          period: "2012 - 2015",
+          role: "Software Developer",
+          company: "Mediatecture Ltd.",
+          description: "- Designed and developed custom software solutions tailored to client needs.\n- Built the ISOVER Constructions Multi Comfort Designer tool to support sustainable building design.\n- Created and maintained building materials databases to streamline data-driven workflows.\n- Developed and deployed websites using CMS platforms such as Joomla and WordPress.",
+          achievements: [
+            "Created ISOVER Multi Comfort Designer tool",
+            "Built and maintained building materials databases for Saint-Gobain",
+            "Developed websites using CMS platforms"
+          ],
+          techStack: "PHP, HTML, CSS, WordPress, Joomla,  Adobe Flash, Adobe AIR"
+        }
+      ]
     },
     education: {
       title: "Educational",
@@ -151,7 +190,46 @@ const translations = {
     experience: {
       title: "Berufliche",
       titleHighlight: "Erfahrung",
-      techStack: "Tech-Stack:"
+      techStack: "Tech-Stack:",
+      experiences: [
+        {
+          period: "2019 - 2025",
+          role: "Leiter der Softwareentwicklung",
+          company: "Die Werkbank IT GmbH",
+          description: "- Verantwortlich für die End-to-End-Entwicklung innovativer AEC-Softwareprodukte (BIM&More, v.create), von der Ideenfindung und Prototypenerstellung bis zur Markteinführung und Kundenakzeptanz.\n- Fungierte als Brücke zwischen Business-Stakeholdern und Entwicklungsteams und stellte sicher, dass komplexe Anforderungen in umsetzbare Backlogs und Prototypen übersetzt wurden.\n- Entwarf und implementierte Systemarchitekturen für skalierbare, integrationslastige Lösungen.\n- Leitete funktionsübergreifende Teams von Entwicklern (Laravel, Vue.js, .NET, C++) und Designern, überwachte Architekturentscheidungen, Sprint-Planung und Budgets und förderte eine Kultur agiler Iteration.\n- Stellte externe Auftragnehmer ein, koordinierte und verwaltete sie, um die Abstimmung mit internen Standards sicherzustellen.\n- Moderierte regelmäßig Kundenworkshops, Demos und Feedback-Sessions mit großen Akteuren der Bauindustrie, um Stakeholder-Alignment und Akzeptanz zu gewährleisten.\n- Spielte eine Schlüsselrolle bei der Übernahme des Unternehmens und stimmte Produktvision, technische Strategie und Innovationspipeline mit Geschäftswachstumszielen ab.",
+          achievements: [
+            "2 SaaS-Produkte gelauncht",
+            "Team 4x skaliert",
+            "Erfolgreicher Verkauf des Unternehmens"
+          ],
+          techStack: "Laravel, PHP, Vue.js, JavaScript, Babylon.js, Revit API, C#, Unity, Archicad SDK, C++, AWS, Kubernetes, Docker, CI/CD"
+        },
+        {
+          period: "2015 - 2019",
+          role: "Senior Softwareentwickler",
+          company: "Next IT Services",
+          description: "- Erhob Anforderungen, entwarf Systeme und entwickelte maßgeschneiderte Lösungen für internationale Kunden (Knauf, Saint-Gobain, Sto).\n- Lieferte das Knauf International Plugin (Systemfinder): ein Tool zur Konfiguration von Bausystemen und deren Import in Revit/Archicad.\n- Entwickelte das Sto BIM Cockpit, ein internes Tool zur Automatisierung von PDF- und BIM-Ausgaben für das Vertriebsteam, wodurch die Vorbereitungszeit erheblich reduziert wurde.\n- Mentorte Junior-Entwickler und trug zur technischen Führung innerhalb des Teams bei.",
+          achievements: [
+            "Tech-Stack-Modernisierung",
+            "Migration von Custom PHP zu Laravel",
+            "Migration von Blade zu Vue.js",
+            "Migration von Monolith zu Microservices"
+          ],
+          techStack: "Laravel, PHP, Vue.js, JavaScript, Babylon.js, Revit API, C#, Unity, Archicad SDK, C++"
+        },
+        {
+          period: "2012 - 2015",
+          role: "Softwareentwickler",
+          company: "Mediatecture Ltd.",
+          description: "- Entwarf und entwickelte maßgeschneiderte Softwarelösungen nach Kundenbedarf.\n- Baute das ISOVER Constructions Multi Comfort Designer Tool zur Unterstützung nachhaltiger Gebäudeplanung.\n- Erstellte und pflegte Baumaterialdatenbanken zur Optimierung datengesteuerter Workflows.\n- Entwickelte und deployede Websites mit CMS-Plattformen wie Joomla und WordPress.",
+          achievements: [
+            "Erstellung des ISOVER Multi Comfort Designer Tools",
+            "Erstellung und Pflege von Baumaterialdatenbanken für Saint-Gobain",
+            "Entwicklung von Websites mit CMS-Plattformen"
+          ],
+          techStack: "PHP, HTML, CSS, WordPress, Joomla, Adobe Flash, Adobe AIR"
+        }
+      ]
     },
     education: {
       title: "Akademischer",
