@@ -189,7 +189,7 @@ const translations = {
       paragraph3: "Diese seltene Kombination aus technischer Meisterschaft und nutzerzentriertem Design Thinking ist mein USP. Ich führe Teams, die skalierbare, wartbare Lösungen entwickeln und dabei immer den Endnutzer und die Geschäftsziele im Mittelpunkt jeder Entscheidung behalten.",
       highlights: {
         years: { number: "13+", label: "Jahre Erfahrung", description: "Entwicklung von Unternehmenssoftware" },
-        acquisition: { number: "1", label: "Unternehmensübernahme", description: "Entscheidender Beitrag zum erfolgreichen Verkauf unseres Unternehmens." },
+        acquisition: { number: "1", label: "Firmenübernahme", description: "Entscheidender Beitrag zum erfolgreichen Verkauf unseres Unternehmens." },
         saas: { number: "2", label: "SaaS-Produkte", description: "Von der Idee bis zur Markteinführung" },
         projects: { number: "30+", label: "Projekte geliefert", description: "Hauptsächlich in der AEC-Branche" },
         mentored: { number: "30+", label: "Entwickler betreut", description: "Die nächste Generation von Talenten fördern" },
